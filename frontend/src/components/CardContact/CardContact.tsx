@@ -1,7 +1,7 @@
 import './CardContact.css';
 import Button from '../Button/Button.tsx';
 import { deleteContato } from '../../services/api.ts';
-import { Trash2, SquarePen } from 'lucide-react';
+import { Trash2, SquarePen, Send } from 'lucide-react';
 
 interface DataCard {
     id: string;
@@ -38,6 +38,11 @@ const CardContact = ({ id, nome, email, idade, telefone }: DataCard) => {
                         titulo={<SquarePen />}
                         className={'btn-edit'}
                         to={`/edit-contato/${id}`}
+                    />
+                    <Button
+                        titulo={<Send />}
+                        className={'btn-send'}
+                        to={`/sendmessage/${id}`}
                     />
                 </div>
             </div>

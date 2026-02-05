@@ -1,0 +1,29 @@
+.textarea-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.textarea-label {
+    font-size: 14px;
+    color: #e5e5e5;
+    font-weight: 500;
+}
+
+.textarea-field {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 14px;
+    resize: vertical; /* permite aumentar altura */
+    outline: none;
+    transition: border 0.2s ease;
+    min-height: 120px;
+}
+
+.textarea-field:focus {
+    border-color: #4f46e5;
+}

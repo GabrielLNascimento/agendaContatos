@@ -1,0 +1,36 @@
+.container-sendmsg {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.header-sendmsg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.title-sendmsg {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.tel-header {
+    background: #1a237e;
+    color: #64b5f6;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    width: fit-content;
+    margin: auto;
+}
+
+.form-sendmessage {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
