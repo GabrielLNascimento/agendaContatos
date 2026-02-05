@@ -1,4 +1,7 @@
-const API_URL = 'http://localhost:5001';
+const API_URL =
+    import.meta.env.MODE === "production"
+        ? "https://agendacontatos-6j0i.onrender.com"
+        : "http://localhost:5001";
 
 export interface Contato {
     id: string;
