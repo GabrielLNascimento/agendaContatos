@@ -16,17 +16,30 @@
     box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
 }
 
-.btn-trash {
-    background-color: rgb(255, 120, 120);
+.btn-trash,
+.btn-edit {
     border: none;
     outline: none;
     border-radius: 5px;
     padding: 5px 5px;
-    color: rgb(255, 29, 29);
     cursor: pointer;
-    transition: .2s;
+    transition: 0.2s;
+}
+
+.btn-edit {
+    background-color: rgb(108, 255, 108);
+    color: rgb(0, 165, 0);
+}
+
+.btn-trash {
+    background-color: rgb(255, 120, 120);
+    color: rgb(255, 29, 29);
 }
 
 .btn-trash:hover {
     background-color: rgb(255, 92, 92);
+}
+
+.btn-edit:hover {
+    background-color: rgb(27, 255, 27);
 }
