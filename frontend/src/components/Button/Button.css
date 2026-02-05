@@ -1,0 +1,32 @@
+.btn-add {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.btn-add:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.btn-trash {
+    background-color: rgb(255, 120, 120);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    color: rgb(255, 29, 29);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-trash:hover {
+    background-color: rgb(255, 92, 92);
+}

@@ -1,0 +1,99 @@
+.card-contact {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    padding: 24px;
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+    border: 1px solid #2d2d2d;
+}
+
+.card-contact:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-color: #3d3d3d;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #2d2d2d;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #e0e0e0;
+    font-weight: 600;
+}
+
+.card-header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.idade {
+    background: #1a237e;
+    color: #64b5f6;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-left {
+    flex: 1;
+}
+
+.info-left p {
+    margin: 8px 0;
+    color: #b0b0b0;
+    font-size: 16px;
+}
+
+.email {
+    font-weight: 500;
+    color: #c0c0c0;
+}
+
+.telefone {
+    color: #909090;
+}
+
+.info-right {
+    margin-left: 24px;
+}
+
+.telefone-destaque {
+    font-size: 28px;
+    font-weight: 700;
+    color: #64b5f6;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .card-body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-right {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+}
