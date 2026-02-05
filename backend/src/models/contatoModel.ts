@@ -35,3 +35,9 @@ export const deleteCont = async (id: string): Promise<Contato> => {
         where: { id },
     });
 };
+
+export const findById = async (id: string): Promise<Contato | null> => {
+    return await prisma.contatos.findUnique({
+        where: { id }
+    })
+}

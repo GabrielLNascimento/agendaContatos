@@ -4,7 +4,6 @@ import * as ContatoModel from '../models/contatoModel.js';
 export const listContatos = async (req: Request, res: Response) => {
     try {
         const contatos = await ContatoModel.findAll();
-        console.log(contatos);
         res.json(contatos);
     } catch (err) {
         console.error('Erro ao listar contatos:', err);
@@ -75,3 +74,28 @@ export const deleteContato = async (req: Request, res: Response) => {
         res.status(500).json({ error: 'Erro ao deletar usuários' });
     }
 };
+
+export const findContatoId = async (req: Request, res: Response) => {
+    try {
+        const { id } = req.params
+
+        if (!id || typeof id !== 'string') {
+            return res.status(400).json({
+                message: 'ID inválido',
+            });
+        }
+
+        const contactExist = await ContatoModel.findById(id)
+        if (!contactExist) {
+            return res.status(400).json({
+                message: "Contato não encontrado"
+            })
+        }
+
+        res.json(contactExist)
+
+    } catch (err) {
+        console.error('Erro ao buscar usuário por id:', err);
+        res.status(500).json({ error: 'Erro ao buscar usuário por id' });
+    }
+}
